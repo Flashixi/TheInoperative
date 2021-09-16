@@ -1,0 +1,201 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Animations/Menu.tres" type="Animation" id=1]
+[ext_resource path="res://Animations/Backdrop Animation.tres" type="Animation" id=2]
+[ext_resource path="res://Animations/QuitAnimation.tres" type="Animation" id=3]
+[ext_resource path="res://Animations/Backdrop Animation 2.tres" type="Animation" id=4]
+[ext_resource path="res://Animations/TitleAnim.tres" type="Animation" id=5]
+[ext_resource path="res://Font/Astonish.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://mainmenubackdrop.png" type="Texture" id=7]
+[ext_resource path="res://Menu.gd" type="Script" id=8]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 6 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "OptionsAnim"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:margin_top")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 93.0, -221.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("VBoxContainer/Options:margin_left")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 32.0, 303.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("VBoxContainer/Start:margin_left")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 20.0, -563.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("VBoxContainer/Quit:margin_left")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 49.0, -568.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("VBoxContainer/TextureRect/mainmenubackdrop:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -58.2054, 55.8297 ), Vector2( 166.795, 55.8297 ), Vector2( -58.2054, 55.8297 ), Vector2( 166.795, 55.8297 ), Vector2( -58.2054, 55.8297 ), Vector2( 166.795, 55.8297 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("VBoxContainer/TextureRect/mainmenubackdrop:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 1, 0.647059, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 1 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 499.455
+margin_top = -117.524
+margin_right = 611.455
+margin_bottom = -49.524
+rect_scale = Vector2( 3, 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+margin_right = 112.0
+
+[node name="mainmenubackdrop" type="Sprite" parent="VBoxContainer/TextureRect"]
+position = Vector2( -58.2054, 55.8297 )
+scale = Vector2( 1.93, 2.037 )
+texture = ExtResource( 7 )
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+modulate = Color( 0.75, 0.853516, 1, 1 )
+margin_top = 4.0
+margin_right = 112.0
+margin_bottom = 30.0
+custom_styles/hover = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+action_mode = 0
+text = "Start"
+flat = true
+
+[node name="Options" type="Button" parent="VBoxContainer"]
+modulate = Color( 0.75, 0.853516, 1, 1 )
+margin_top = 34.0
+margin_right = 112.0
+margin_bottom = 56.0
+custom_styles/hover = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+text = "Options"
+flat = true
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+modulate = Color( 0.75, 0.853516, 1, 1 )
+margin_top = 60.0
+margin_right = 112.0
+margin_bottom = 82.0
+custom_styles/hover = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+text = "Quit"
+flat = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Backdrop Animation" = ExtResource( 2 )
+"anims/Backdrop Animation 2" = ExtResource( 4 )
+anims/OptionsAnim = SubResource( 8 )
+anims/QuitAnimation = ExtResource( 3 )
+anims/StartAnimation = ExtResource( 1 )
+anims/TitleAnim = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 112.0
+margin_top = 93.0
+margin_right = 299.004
+margin_bottom = 708.863
+rect_scale = Vector2( 6, 10 )
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0.546637, 0.728692, 0.902832, 1 )
+text = "The Inoperative"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

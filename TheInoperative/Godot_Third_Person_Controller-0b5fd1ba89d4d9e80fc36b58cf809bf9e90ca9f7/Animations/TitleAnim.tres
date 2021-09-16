@@ -1,0 +1,125 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "TitleAnim"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 112, 83 ), Vector2( 112, 104.863 ), Vector2( 113.682, 64.5003 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:custom_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Color( 0.436239, 0.596208, 0.749512, 1 ), Color( 1, 1, 1, 1 ), Color( 0.569946, 0.748393, 0.90625, 1 ), Color( 1, 1, 1, 1 ), Color( 0.546637, 0.728692, 0.902832, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Label:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("VBoxContainer/Start:margin_left")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 2.0, -17.0, 2.0, -67.0, 2.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("VBoxContainer/Start:margin_top")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.6, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 14.0, 13.0, 14.0, 12.0, 6.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("VBoxContainer/Options:margin_left")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 21.0, 62.0, -1.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("VBoxContainer/Options:margin_top")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 34.0, 39.0, 25.0, 43.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("VBoxContainer/Quit:margin_left")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 33.0, 36.0, -1.0, 31.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("VBoxContainer/Quit:margin_top")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 50.0, 59.0, 59.0, 76.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("VBoxContainer/TextureRect/mainmenubackdrop:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ) ]
+}

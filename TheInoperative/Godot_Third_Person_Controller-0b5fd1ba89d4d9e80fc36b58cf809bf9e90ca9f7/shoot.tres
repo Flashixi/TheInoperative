@@ -1,0 +1,18 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "shoot"
+length = 0.25
+step = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.065703, 0.13256, 0.203328 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 0 ]
+}
