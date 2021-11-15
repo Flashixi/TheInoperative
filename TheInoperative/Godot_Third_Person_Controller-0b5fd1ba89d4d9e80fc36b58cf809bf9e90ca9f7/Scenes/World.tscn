@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Main.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Zombie.tscn" type="PackedScene" id=2]
+[ext_resource path="res://City/Manhattan.tscn" type="PackedScene" id=3]
+
+[sub_resource type="ProceduralSky" id=1]
+radiance_size = 0
+sky_top_color = Color( 0.988235, 0.2, 0.2, 1 )
+sky_horizon_color = Color( 0, 0, 0, 1 )
+sky_curve = 0.199722
+sky_energy = 0.5
+ground_bottom_color = Color( 0, 0, 0, 1 )
+ground_horizon_color = Color( 1, 0, 0, 1 )
+ground_energy = 0.0
+sun_color = Color( 1, 0, 0, 1 )
+sun_latitude = 34.74
+sun_energy = 63.14
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_energy = 0.5
+ambient_light_color = Color( 1, 0.188235, 0.188235, 1 )
+ambient_light_energy = 0.0
+fog_enabled = true
+fog_color = Color( 0.984314, 0.258824, 0.258824, 1 )
+fog_sun_color = Color( 1, 0, 0, 1 )
+fog_sun_amount = 1.0
+fog_depth_begin = 0.0
+fog_depth_end = 59.2
+fog_depth_curve = 1.10957
+dof_blur_far_distance = 109.39
+dof_blur_far_transition = 15.4
+dof_blur_far_amount = 0.15
+dof_blur_far_quality = 2
+dof_blur_near_distance = 8.43
+dof_blur_near_transition = 0.41
+dof_blur_near_quality = 0
+glow_enabled = true
+glow_intensity = 2.4
+glow_strength = 2.0
+glow_bloom = 1.0
+glow_hdr_threshold = 1.46
+glow_high_quality = true
+
+[node name="World" type="Spatial"]
+
+[node name="Zombie" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.6844, 0, 3.95113 )
+
+[node name="Zombie2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -40.0331, -4.76837e-07, 8.997 )
+
+[node name="Zombie3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4288, -4.76837e-07, 8.997 )
+
+[node name="Zombie4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4288, -4.76837e-07, 2.15825 )
+
+[node name="Zombie5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4288, -4.76837e-07, 5.34149 )
+
+[node name="Zombie6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4288, -4.76837e-07, 11.6523 )
+
+[node name="Zombie7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.0016, -4.76837e-07, 11.6523 )
+
+[node name="Zombie8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.0016, -4.76837e-07, 6.63097 )
+
+[node name="Zombie9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.0016, -4.76837e-07, 1.44327 )
+
+[node name="Zombie10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3504, -4.76837e-07, 14.3453 )
+
+[node name="Zombie11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3472, -0.0234494, 14.3451 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00939536, -0.00810933, -0.00297165 )
+
+[node name="Manhattan" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.895493, -45.5618, -5.24772 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )

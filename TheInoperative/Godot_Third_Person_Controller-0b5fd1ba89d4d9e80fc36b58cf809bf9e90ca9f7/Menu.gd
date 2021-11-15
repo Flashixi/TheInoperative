@@ -2,7 +2,7 @@ extends Control
 
 var Options = "res://Options.tscn"
 
-var Main = "res://Main.tscn"
+var Main = "res://Scenes/World.tscn"
 
 func _ready():
 	$AnimationPlayer.play("Backdrop Animation")

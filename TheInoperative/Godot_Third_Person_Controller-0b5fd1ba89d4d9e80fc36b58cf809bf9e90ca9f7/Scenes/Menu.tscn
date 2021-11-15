@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Animations/Menu.tres" type="Animation" id=1]
 [ext_resource path="res://Animations/Backdrop Animation.tres" type="Animation" id=2]
@@ -11,24 +11,24 @@
 
 [sub_resource type="Theme" id=1]
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
-
 [sub_resource type="DynamicFont" id=3]
 size = 20
 font_data = ExtResource( 6 )
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
 
 [sub_resource type="DynamicFont" id=5]
 font_data = ExtResource( 6 )
 
-[sub_resource type="StyleBoxFlat" id=6]
+[sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
 
 [sub_resource type="DynamicFont" id=7]
 font_data = ExtResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.713726, 0.713726, 0.713726, 1 )
 
 [sub_resource type="Animation" id=8]
 resource_name = "OptionsAnim"
@@ -103,7 +103,22 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 0, 1, 0.647059, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer/TextureRect/mainmenubackdrop:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="DynamicFont" id=9]
@@ -137,41 +152,44 @@ __meta__ = {
 margin_right = 112.0
 
 [node name="mainmenubackdrop" type="Sprite" parent="VBoxContainer/TextureRect"]
-position = Vector2( -58.2054, 55.8297 )
+position = Vector2( -57.5387, 55.8297 )
 scale = Vector2( 1.93, 2.037 )
 texture = ExtResource( 7 )
 
 [node name="Start" type="Button" parent="VBoxContainer"]
-modulate = Color( 0.75, 0.853516, 1, 1 )
-margin_top = 4.0
+modulate = Color( 1, 0.533333, 0.533333, 1 )
+margin_left = 2.0
+margin_top = 14.0
 margin_right = 112.0
 margin_bottom = 30.0
-custom_styles/hover = SubResource( 2 )
-custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 2 )
 action_mode = 0
 text = "Start"
 flat = true
 
 [node name="Options" type="Button" parent="VBoxContainer"]
-modulate = Color( 0.75, 0.853516, 1, 1 )
+modulate = Color( 1, 0.533333, 0.533333, 1 )
+margin_left = 4.0
 margin_top = 34.0
 margin_right = 112.0
 margin_bottom = 56.0
-custom_styles/hover = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 4 )
 text = "Options"
 flat = true
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
-modulate = Color( 0.75, 0.853516, 1, 1 )
-margin_top = 60.0
+modulate = Color( 1, 0.533333, 0.533333, 1 )
+margin_left = 33.0
+margin_top = 50.0
 margin_right = 112.0
 margin_bottom = 82.0
-custom_styles/hover = SubResource( 6 )
-custom_fonts/font = SubResource( 7 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 6 )
 text = "Quit"
 flat = true
 
@@ -180,17 +198,18 @@ flat = true
 "anims/Backdrop Animation 2" = ExtResource( 4 )
 anims/OptionsAnim = SubResource( 8 )
 anims/QuitAnimation = ExtResource( 3 )
+anims/RESET = SubResource( 10 )
 anims/StartAnimation = ExtResource( 1 )
 anims/TitleAnim = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 112.0
-margin_top = 93.0
+margin_top = 83.0
 margin_right = 299.004
-margin_bottom = 708.863
+margin_bottom = 711.009
 rect_scale = Vector2( 6, 10 )
+custom_colors/font_color = Color( 1, 0.223529, 0.223529, 1 )
 custom_fonts/font = SubResource( 9 )
-custom_colors/font_color = Color( 0.546637, 0.728692, 0.902832, 1 )
 text = "The Inoperative"
 __meta__ = {
 "_edit_use_anchors_": false

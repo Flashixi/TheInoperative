@@ -25,7 +25,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ Color( 0.436239, 0.596208, 0.749512, 1 ), Color( 1, 1, 1, 1 ), Color( 0.569946, 0.748393, 0.90625, 1 ), Color( 1, 1, 1, 1 ), Color( 0.546637, 0.728692, 0.902832, 1 ) ]
+"values": [ Color( 1, 0.223529, 0.223529, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.223529, 0.223529, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.223529, 0.223529, 1 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Label:visible")
@@ -122,4 +122,16 @@ tracks/9/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ), Vector2( 178.128, 55.8297 ), Vector2( -57.5387, 55.8297 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("VBoxContainer/TextureRect/mainmenubackdrop:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.345098, 0.345098, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.345098, 0.345098, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.345098, 0.345098, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.345098, 0.345098, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 0.345098, 0.345098, 1 ), Color( 1, 1, 1, 1 ) ]
 }
